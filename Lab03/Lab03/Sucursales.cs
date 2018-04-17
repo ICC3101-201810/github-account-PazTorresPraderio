@@ -9,15 +9,18 @@ namespace Lab03
     class Sucursales
     {
         string direccion;
+        string CodigoVerificador;
         List<Vehiculos> vehiculos;
         List<Accesorios> a;
-    
-        public Sucursales(string direccion, List<Vehiculos> vehiculos , List<Accesorios>a)
+       
+
+        public Sucursales(string direccion, string CodigoVerificador, List<Vehiculos> vehiculos , List<Accesorios>a)
         {
             this.direccion = direccion;
             this.vehiculos = new List<Vehiculos>();
             this.a = new List<Accesorios>();
         }
+
         public void AgregarVehiculo (Vehiculos vehiculo)
         {
             vehiculos.Add(vehiculo);
@@ -30,5 +33,8 @@ namespace Lab03
         {
             Console.WriteLine("Hola Sucursal De" + this.direccion);
         }
+        public string DarDireccion() { return this.direccion; }
+        public void Recorrervehiculos() { foreach (Vehiculos ve in vehiculos) { Console.WriteLine(ve.GetPatente() + "  " +  ve.GetPrecio() + "  "  + ve.GetName()); } }
+            
     }
 }

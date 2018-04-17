@@ -8,12 +8,13 @@ namespace Lab03
 {
     class Auto : Vehiculos
     {
-        public Auto(string patente): base (patente)
+        public Auto(string patente, int precio ,string Nombre): base (patente, precio, Nombre)
         {
             
 
             
         }
+        
 
     }
 }

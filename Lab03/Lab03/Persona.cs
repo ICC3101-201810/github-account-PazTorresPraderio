@@ -9,10 +9,13 @@ namespace Lab03
     class Persona : Cliente
     {
         bool permiso;
-        public Persona(string Nombre, bool permiso) : base(Nombre)
+        int rut;
+        public Persona(string Nombre, bool permiso , int rut) : base(Nombre)
         {
             
             this.permiso = permiso;
+            this.rut = rut;
+
         }
     }
 }

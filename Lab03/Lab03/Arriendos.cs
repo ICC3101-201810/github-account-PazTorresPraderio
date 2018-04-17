@@ -9,17 +9,26 @@ namespace Lab03
 {
     class Arriendos
     {
-        DateTime horaF;
-        DateTime horaI;
-        int PrecioTotal;
         
-        public Arriendos(DateTime horaF ,DateTime horaI, int PrecioTotal, Cliente c , Vehiculos v , Accesorios a , Sucursales s )
+        int PrecioTotal;
+        string tipodeAuto;
+        string NombreCliente;
+        string dir;
+
+        public Arriendos( int PrecioTotal,  string tipodeAuto , string NombreCliente,string dir )
         {
-            this.horaF = horaF;
-            this.horaI = horaI;
+          
             this.PrecioTotal = PrecioTotal;
+            this.tipodeAuto = tipodeAuto;
+            this.NombreCliente = NombreCliente;
+            this.dir = dir;
+
           
 
+        }
+        public void Dardatos()
+        {
+            Console.WriteLine("Este auto" + Environment.NewLine + this.tipodeAuto + Environment.NewLine + this.dir + Environment.NewLine+ this.PrecioTotal);
         }
 
         

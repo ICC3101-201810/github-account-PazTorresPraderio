@@ -8,7 +8,7 @@ namespace Lab03
 {
     class MotoAcuatica : Vehiculos
     {
-        public MotoAcuatica(string patente): base (patente)
+        public MotoAcuatica(string patente, int precio , string Nombre): base (patente, precio, Nombre)
         {
 
         }
